@@ -1,0 +1,127 @@
+$blue-light: #1d9bf0;
+
+a{
+    color: $blue-light;
+    text-decoration: none;
+}
+/*header*/
+
+.header{
+    width: 100%;
+    height: 6rem;
+    padding: 30px;
+    &__icon{
+        font-size: 4rem;
+    }
+}
+
+/* Mian section */
+.Main{
+    padding: 30px;
+    &__title{
+        width: 90%;
+        font-weight: 700;
+        line-height: 52px;
+        font-size: 4rem;
+        padding: 30px 0 40px 0;
+    }
+    &__subtitle{
+        width: 70%;
+        font-weight: 700;
+        font-size: 2.4rem;
+        margin-bottom: 14px;
+    }
+}
+
+.Buttons{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    &__main{
+        max-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        color: grey;
+        padding: 8px 0;
+        &--apple{
+            margin-top: 14px;
+            color: black;
+            font-weight: 700;
+        }
+        &-blue{
+            padding: 12px 0;
+            font-weight: 700;
+            background-color: $blue-light;
+            color: white;
+            margin-bottom: 4px;
+        }
+        &-login{
+            padding: 12px 0;
+            background-color: transparent;
+            color: $blue-light;
+            border: 1px solid grey;
+        }
+        i{
+            font-size: 2.2rem;
+            padding-right: 10px;
+        }
+    }
+    &__text{
+        font-size: 1.1rem;
+        color: grey;
+        margin-bottom: 16px;
+    }
+    &__wrapper{
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        p{
+            padding: 0 12px;
+        }
+        hr{
+            width: 120px;
+        }
+    }
+    &__title{
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+.Image{
+    background: url('https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 46vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__twitter{
+        font-size: 300px;
+        color: white;
+    }
+}
+
+.footer{
+    padding-top: 10px;
+    font-size: 1.3rem;
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        list-style: none;
+        padding: 6px 0;
+    }
+    a{
+        color: grey;
+    }
+}
