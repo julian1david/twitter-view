@@ -6,9 +6,26 @@
 html{
     font-size: 62.5%;
 }
+@font-face {
+    font-family: chirp-extended;
+    src: url('../../fonts/chirp/chirp-extended-heavy-web.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: chirp;
+    src: url('../../fonts/chirp/chirp-bold-web.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: chirp;
+    src: url('../../fonts/chirp/chirp-bold-web.otf');
+    font-weight: normal;
+}
+
 body{
-    font-family: 'Roboto', Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'chirp', Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: black;
     color: white;
     font-size: 2.0rem;
+    font-weight: normal;
 }

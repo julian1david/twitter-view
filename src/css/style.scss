@@ -8,7 +8,7 @@ a{
 
 .header{
     width: 100%;
-    height: 6rem;
+    height: 4rem;
     &__icon{
         font-size: 4rem;
     }
@@ -17,54 +17,50 @@ a{
 /* Mian section */
 .Main{
     &__title{
-        width: 90%;
         font-weight: 700;
-        line-height: 52px;
-        font-size: 4rem;
+        line-height: 40px;
+        font-size: 3.4rem;
         padding: 30px 0 40px 0;
     }
     &__subtitle{
-        width: 70%;
         font-weight: 700;
-        font-size: 2.4rem;
-        margin-bottom: 14px;
+        font-size: 2rem;
+        margin-bottom: 18px;
     }
     &__section{
-        padding: 40px;
+        padding: 30px;
     }
 }
 
 .Buttons{
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 10px;
-    border: none;
     &__main{
-        max-height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
+        min-width: 280px;
+        max-width: 500px;
         width: 100%;
         border-radius: 40px;
-        letter-spacing: 1px;
-        color: grey;
-        padding: 8px 0;
-        &--apple{
-            margin-top: 14px;
-            color: black;
-            font-weight: 700;
+        padding: 10px 0;
+        color: black;
+        border: none;
+        font-weight: 700;
+        &-google{
+            font-weight: 500;
+            margin-bottom: 14px;
         }
         &-blue{
-            padding: 12px 0;
-            font-weight: 700;
+            font-size: 1.2rem;
             background-color: $blue-light;
             color: white;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
         &-login{
-            padding: 12px 0;
             background-color: transparent;
             color: $blue-light;
             border: 1px solid grey;
@@ -75,11 +71,12 @@ a{
         }
     }
     &__text{
-        font-size: 1.1rem;
-        color: grey;
+        font-size: 0.8rem;
+        color: rgb(112, 111, 111);
         margin-bottom: 16px;
     }
     &__wrapper{
+        font-size: 1.2rem;
         padding: 10px 0;
         display: flex;
         align-items: center;
@@ -87,11 +84,13 @@ a{
             padding: 0 12px;
         }
         hr{
-            width: 120px;
+            min-width: 120px;
+            max-width: 200px;
         }
     }
     &__title{
-        text-align: left;
+        font-weight: 700;
+        font-size: 1.4rem;
         margin-top: 40px;
         margin-bottom: 20px;
     }
@@ -114,8 +113,8 @@ a{
 }
 
 .footer{
-    padding-top: 10px;
-    font-size: 1.3rem;
+    padding: 12px;
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -136,31 +135,52 @@ a{
     .Main {
         display: flex;
         width: 100%;
-        height: 90vh;
+        height: 800px;
         &__section{
-            padding-top: 10%;
             order: 2;
             justify-content: space-between;
         }
         &__title{
-            font-size: 6rem;
+            margin-top: 40px ;
+            width: 80%;
+            line-height: 80px;
+            font-size: 6.4rem;
+        }
+        &__subtitle{
+            font-size: 3.0rem;
+            margin-bottom: 40px;
         }
     }
     .Buttons{
-        width: 50%;
+        width: 40%;
+        &__main{
+            &-blue{
+                font-weight: normal;
+                font-size: 1.5rem;
+            }
+        }
+        &__text{
+            font-weight: normal;
+            font-size: 1rem;
+        }
     }
     .Image{
-        width: 56%;
+        width: 44%;
         height: 100%;
         order: 1;
+        &__twitter{
+            font-size: 400px;
+        }
     }
     .footer{
         height: 10vh;
         width: 100%;
+        justify-content: center;
         align-items: center;
+        font-size: 1.4rem;
         ul{
             padding: 0;
-            width: 20%;
+            gap: 20px;
         }
     }
 }
