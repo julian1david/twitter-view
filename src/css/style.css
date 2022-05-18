@@ -257,6 +257,8 @@ a {
   }
 
   .Login {
+    overflow-y: scroll;
+    height: 80vh;
     width: 600px;
     border-radius: 20px;
     padding: 14px;
