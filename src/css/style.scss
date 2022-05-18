@@ -38,8 +38,8 @@ a{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 10px;
-    
     &__main{
+        cursor: pointer;
         min-width: 280px;
         max-width: 500px;
         border-radius: 40px;
@@ -70,6 +70,12 @@ a{
             background-color: transparent;
             color: $blue-light;
             border: 1px solid grey;
+            a {
+                width: 100%;
+            }
+        }
+        &-continue{
+            margin-bottom: 10px;
         }
         i{
             font-size: 2rem;
@@ -137,6 +143,64 @@ a{
     }
 }
 
+.Login{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    &__icon{
+        font-size: 3.4rem;
+    }
+    &__form{
+        min-width: 320px;
+        max-width: 320px;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    &__input{
+        min-width: 280px;
+        max-width: 500px;
+        background: transparent;
+        border: 1px solid grey;
+        padding: 18px;
+        border-radius: 4px;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin-top: 40px;
+        align-self: flex-start;
+        font-size: 1.6rem;
+    }
+    &__title{
+        margin-bottom: 20px;
+        align-self: flex-start;
+    }
+    &__forgot{
+        color: white;
+        font-weight: normal;
+        font-size: 1.6rem;
+    }
+    &__close{
+        border-radius: 50%;
+        color: white;
+        padding: 4px 8px;
+        position: absolute;
+        left: 20px;
+        &:hover{
+            background-color: rgb(34, 33, 33);
+        }
+    }
+
+}
+
 @media (min-width: 900px) {
     .Main {
         display: flex;
@@ -156,6 +220,15 @@ a{
             font-size: 3.0rem;
             margin-bottom: 40px;
         }
+        &__login{
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(91, 112, 131, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
     }
     .Buttons{
         width: 40%;
@@ -186,5 +259,14 @@ a{
         ul{
             margin-right: 10px;
         }
+    }
+    .Login{
+        width: 600px;
+        border-radius: 20px;
+        padding: 14px;
+        &__text{
+            font-size: 1.8rem;
+        }
+        
     }
 }

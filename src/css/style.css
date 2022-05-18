@@ -36,6 +36,7 @@ a {
   margin-bottom: 10px;
 }
 .Buttons__main {
+  cursor: pointer;
   min-width: 280px;
   max-width: 500px;
   border-radius: 40px;
@@ -67,6 +68,12 @@ a {
   background-color: transparent;
   color: #1d9bf0;
   border: 1px solid grey;
+}
+.Buttons__main-login a {
+  width: 100%;
+}
+.Buttons__main-continue {
+  margin-bottom: 10px;
 }
 .Buttons__main i {
   font-size: 2rem;
@@ -132,6 +139,63 @@ a {
   color: grey;
 }
 
+.Login {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.Login__icon {
+  font-size: 3.4rem;
+}
+.Login__form {
+  min-width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 40px;
+}
+.Login__input {
+  min-width: 280px;
+  max-width: 500px;
+  background: transparent;
+  border: 1px solid grey;
+  padding: 18px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.Login__text {
+  margin-top: 40px;
+  align-self: flex-start;
+  font-size: 1.6rem;
+}
+.Login__title {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.Login__forgot {
+  color: white;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+.Login__close {
+  border-radius: 50%;
+  color: white;
+  padding: 4px 8px;
+  position: absolute;
+  left: 20px;
+}
+.Login__close:hover {
+  background-color: rgb(34, 33, 33);
+}
+
 @media (min-width: 900px) {
   .Main {
     display: flex;
@@ -151,6 +215,14 @@ a {
   .Main__subtitle {
     font-size: 3rem;
     margin-bottom: 40px;
+  }
+  .Main__login {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(91, 112, 131, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .Buttons {
@@ -182,6 +254,15 @@ a {
   }
   .footer ul {
     margin-right: 10px;
+  }
+
+  .Login {
+    width: 600px;
+    border-radius: 20px;
+    padding: 14px;
+  }
+  .Login__text {
+    font-size: 1.8rem;
   }
 }
 
