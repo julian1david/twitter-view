@@ -28,7 +28,8 @@
                 <p class="Main__subtitle">Únete a Twitter hoy mismo.</p>
             </section>
             <section class="Buttons">
-                <button class="Buttons__main Buttons__main-google"><span><i class="fa-brands fa-google"></i></span> Registrase con Google</button>
+                <button class="Buttons__main Buttons__main-google"><span><i class="fa-brands fa-google"></i></span>
+                    Registrase con Google</button>
                 <button class="Buttons__main Buttons__main-apple"><i class="fa-brands fa-apple"></i>Registrase con
                     Apple</button>
                 <div class="Buttons__wrapper">
@@ -36,12 +37,13 @@
                     <p>O</p>
                     <hr>
                 </div>
-                <button class="Buttons__main  Buttons__main-blue">Registrate con el número de teléfono o  correo electronico</button>
+                <button class="Buttons__main  Buttons__main-blue"><a href="#registro">Registrate con el número de teléfono o correo electronico</a></button>
                 <p class="Buttons__text">Al registrarte, aceptas los <a href="">Términos de servicio </a>y la <a
                         href="">Política de
                         privacidad</a> , incluida la política de <a href=""> Uso de Cookies.</a></p>
                 <p class="Buttons__title">¿Ya tienes una cuenta?</p>
-                <button class="Buttons__main Buttons__main-login"><a href="./tempaltes/login.html">Login in</a></button>
+                <button class="Buttons__main Buttons__main-login"><a href="./tempaltes/login.html">Iniciar
+                        sesión</a></button>
             </section>
         </section>
         <section class="Image">
@@ -54,7 +56,7 @@
             <li><a href="./">Centro de ayuda</a></li>
             <li><a href="./">Condiciones de servicio</a></li>
         </ul>
-        <ul  class="footer__two">
+        <ul class="footer__two">
             <li><a href="./">Política de privacidad</a></li>
             <li><a href="./">Politica de cookies</a></li>
             <li><a href="./">Accesiblidad</a></li>
@@ -80,6 +82,41 @@
             <li><a href="/">@ 2022 Twitter, Inc</a></li>
         </ul>
     </footer>
+    <div class="lightbox" id="registro">
+        <section class="Login Register">
+            <a class="Login__close" href="/index.html"><i class="fa-solid fa-xmark"></i></a>
+            <span class="header__icon Login__icon"><i class="fa-brands fa-twitter"></i></span>
+            <form action="" class="Login__form">
+                <h1 class="Login__title">Crea tu cuenta</h1>
+                <input class="Login__input" type="text" placeholder="Nombre">
+                <input class="Login__input" type="text" placeholder="Telefono">
+                <p class="Buttons__text Login__text-register"><a href="">Usar correo </a></p>
+                <h3 class="Login__title-register">Fecha de nacimiento</h3>
+                <p class="Buttons__text Buttons__text-register">Esta información no será publica. Confirma tu propia edad, incluso si esta cuenta es para una empresa,
+                    una mascota u otra cosa</p>
+                <div class="Login__month">
+                    <label>Mes
+                    </label>
+                        <input class="Login__input Login__input-date" list="months" name="myBrowser" />
+                        <datalist id="months">
+                            <option value="Enero">
+                            <option value="Febrero">
+                            <option value="Marzo">
+                            <option value="Abril">
+                            <option value="Mayo">
+                            <option value="Junio">
+                            <option value="Julio">
+                            <option value="Agosto">
+                            <option value="Septiembre">
+                            <option value="Octubre">
+                            <option value="Noviembre">
+                            <option value="Diciembre">
+                        </datalist>
+                </div>
+                <button class="Buttons__main Buttons__main-continue">Siguiente</button>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>

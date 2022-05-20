@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="lightbox" id="registro">
+        <section class="Login Register">
+            <a class="Login__close" href="../index.html"><i class="fa-solid fa-xmark"></i></a>
+            <span class="header__icon Login__icon"><i class="fa-brands fa-twitter"></i></span>
+            <form action="" class="Login__form">
+                <h1 class="Login__title">Crea tu cuenta</h1>
+                <input class="Login__input" type="text" placeholder="Nombre">
+                <input class="Login__input" type="text" placeholder="Telefono">
+                <p class="Buttons__text Login__text-register"><a href="">Usar correo </a></p>
+                <h3 class="Login__title-register">Fecha de nacimiento</h3>
+                <p class="Buttons__text Buttons__text-register">Esta información no será publica. Confirma tu propia edad, incluso si esta cuenta es para una empresa,
+                    una mascota u otra cosa</p>
+                <div class="Login__month">
+                    <label>Mes
+                    </label>
+                        <input class="Login__input Login__input-date" list="months" name="myBrowser" />
+                        <datalist id="months">
+                            <option value="Enero">
+                            <option value="Febrero">
+                            <option value="Marzo">
+                            <option value="Abril">
+                            <option value="Mayo">
+                            <option value="Junio">
+                            <option value="Julio">
+                            <option value="Agosto">
+                            <option value="Septiembre">
+                            <option value="Octubre">
+                            <option value="Noviembre">
+                            <option value="Diciembre">
+                        </datalist>
+                </div>
+                <button class="Buttons__main Buttons__main-continue">Siguiente</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
